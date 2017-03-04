@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'Voting@makeVote');
+Route::post('/', 'Voting@saveVote');
+Route::get('/show-votes', 'Voting@showVotes');
