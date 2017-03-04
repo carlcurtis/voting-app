@@ -6,7 +6,7 @@
 
 
 ## Assumptions
-This is being preformed on OSX and you a `id.rsa.pub` file.
+This is being preformed on OSX and you have a valid `id.rsa.pub` file.
 
 The repository will be cloned into your home directory
 
@@ -50,5 +50,6 @@ The application should now be viewable at http://voting.app
 * Multiple Environments.
 * Generate Parties dropdown based on Constituency selected.
 * Backend for admin to add remove Parties and Constituencies.
-* Go through Setup Instructions on a fresh machine to ensure all Prerequisite are listed
+* Go through Setup Instructions on a fresh machine to ensure all Prerequisite are listed.
+* Tidy up and compress git commit history
 * More things which currently elude me.
