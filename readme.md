@@ -1,8 +1,8 @@
 ## Prerequisite
-Vagrant
-git
-composer
-php
+* Vagrant
+* git
+* composer
+* php
 
 
 ## Assumptions
@@ -39,7 +39,7 @@ Seed the database
 Generate a environment key
 `php artisan key:generate`
 
-The application should now be at http://voting.app
+The application should now be viewable at http://voting.app
 
 
 ##To Do List
@@ -48,6 +48,7 @@ The application should now be at http://voting.app
 * Move away from Vagrant to Docker based setup with DB on different container to Webserver.
 * Automate environment set up.
 * Multiple Environments.
-* Generate Parties dropdown dynamically based on constituency selected.
+* Generate Parties dropdown based on Constituency selected.
 * Backend for admin to add remove Parties and Constituencies.
-* Mores things which currently elude me.
+* Go through Setup Instructions on a fresh machine to ensure all Prerequisite are listed
+* More things which currently elude me.
