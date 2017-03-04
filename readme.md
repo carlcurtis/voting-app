@@ -1,23 +1,40 @@
-Prerequisite
+## Prerequisite
+Vagrant
+git
+composer
+php
 
-Assumptions
+
+## Assumptions
+This is being preformed on OSX and you a `id.rsa.pub` file
 The repository will be cloned into your home directory
 
-Clone Repository
-cd ./voting-app
-composer require laravel/homestead --dev
-php vender/bin/homestead make
+## Instructions
+Clone Repository and move into directory
+`git clone git@github.com:carlcurtis/voting-app.git; cd ./voting-app`
 
-mv Homestead.yaml.example Homestead.yaml
-mv Vagrantfile.example Vagrantfile
+Install Homestead
+`composer require laravel/homestead --dev`
+`php vender/bin/homestead make`
 
-sudo echo "192.168.10.10 voting.app" >> /etc/hosts
+Copy config files
+`mv Homestead.yaml.example Homestead.yaml`
+`mv Vagrantfile.example Vagrantfile`
+`mv .env.example .env`
 
-vagrant up
+Place entry in Host file
+`sudo echo "192.168.10.10 voting.app" >> /etc/hosts`
 
-cd /Code/voting-app
-php artisan migrate --seed
-php artisan key:generate
+Start Vagrant machine and SSH onto it
+`vagrant up`
+`vagrant ssh`
 
+Move into working directory
+`cd /Code/voting-app`
+Seed the database
+`php artisan migrate --seed`
 
-Open voting.app browser
+Generate a environment key
+`php artisan key:generate`
+
+The application should now be at http://voting.app

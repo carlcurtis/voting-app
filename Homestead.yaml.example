@@ -6,9 +6,9 @@ authorize: ~/.ssh/id_rsa.pub
 keys:
     - ~/.ssh/id_rsa
 folders:
-    - { map: ~/voting-app, to: /home/vagrant/Code/voting }
+    - { map: ~/voting-app, to: /home/vagrant/Code/voting-app }
 sites:
-    - { map: voting.app, to: /home/vagrant/Code/voting/public }
+    - { map: voting.app, to: /home/vagrant/Code/voting-app/public }
 databases:
     - homestead
     - voting
